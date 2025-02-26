@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ body {
+  
+} 
+
+.section1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #0d1d35;
+  color: white;
+}
+
+.contact-container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #0a182d;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  gap: 2rem;
+  border: 0.5px solid #1c3553;
+}
+
+/* Profile Section */
+.profile-section {
+  flex: 1;
+  text-align: center;
+  background-color: #071122;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.contact-info h4 {
+  font-size: 1rem;
+  color: #5c7599;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.facebook { background-color: #3b5998; }
+.dribbble { background-color: #ea4c89; }
+.linkedin { background-color: #0077b5; }
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+/* Form Section */
+.form-section {
+  flex: 2;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Consistent label styling */
+label {
+  font-size: 0.8rem;
+  color: #f9f9f9;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #0c1c2e;
+  border: 1px solid #1c3553;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #5c7599;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* Submit Button */
+button {
+  background: linear-gradient(90deg, #0095ff, #0077cc);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0077cc, #005faa);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  margin-top: 2rem;
+}

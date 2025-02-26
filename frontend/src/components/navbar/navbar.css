@@ -1,0 +1,84 @@
+/* Navbar styles */
+body, nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* background-color: transparent; */
+    background-color: #040d17;
+    /* margin-top: 35px; */
+    display: flex;
+    justify-content: space-between; /* Space out logo and nav items */
+    cursor: pointer;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position it at the top of the screen */
+    left: 0; /* Ensure it's aligned to the left */
+    width: 100%; /* Make sure the navbar spans the entire width */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Align nav items to the right */
+    margin: 0;
+    padding-right: 10%;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+a:hover {
+    
+}
+
+.logo-container {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    padding-left: 200px; /* Adjust this as needed for your layout */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+
+/* Styling for Let's Talk button */
+.talk-btn {
+    background-color: #2575fc; /* Blue color */
+    color: white;
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.talk-btn:hover {
+    background-color: #6a11cb; /* Change color on hover */
+}

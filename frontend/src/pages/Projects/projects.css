@@ -1,0 +1,25 @@
+/* Basic styling for each section */
+.section {
+    padding: 100px 20px;  /* Add some padding for each section */
+    /* margin: 50px 0;  Add margin to separate the sections */
+    height: 100vh;  /* Make each section take up the full viewport height */
+    background-color: blue;
+  }
+  
+  .hero {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+  }
+  
+  /* Optional: You can add a smooth scroll effect to the whole page */
+  html {
+    scroll-behavior: smooth;
+  }
+  

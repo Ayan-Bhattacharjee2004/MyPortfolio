@@ -1,0 +1,28 @@
+/* Section styling */
+.section5 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 75px;
+  height: 100vh;
+  
+
+  background: linear-gradient(90deg, rgba(3,36,75,1) 29%, rgba(5,11,17,1) 90%);
+}
+.leftSection{
+background-color: red;
+width: 50%;
+}
+.rightSection{
+  background-color: blue;
+  width: 50%;
+}
+
+
+
+
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
