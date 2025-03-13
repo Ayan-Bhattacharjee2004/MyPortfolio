@@ -2,10 +2,12 @@
 body, nav {
     margin: 0;
     padding: 0;
+   
+    padding-top: 67px; /* Push everything below the navbar */
 }
 
 nav {
-    /* background-color: transparent; */
+     /* background-color: transparent;  */
     background-color: #040d17;
     /* margin-top: 35px; */
     display: flex;

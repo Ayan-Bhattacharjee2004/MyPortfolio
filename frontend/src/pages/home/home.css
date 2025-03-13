@@ -1,28 +1,205 @@
-/* Section styling */
-.section5 {
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap'); Consider reducing the font weights if not all are used */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
+  background-color: #0a1725;
+  min-height: 100vh; /* If extra space appears, consider reducing */
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  /* padding: 2rem; */
   display: flex;
-  justify-content: space-around;
-  margin-top: 75px;
-  height: 100vh;
+  align-items: center;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left-content {
+  flex: 1;
+  max-width: 550px;
+  padding-right: 2rem;
+}
+
+.name-badge {
+  display: inline-block;
+  background-color: #0a1725; /* Unnecessary since .home-container already has this background */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.headline {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.developer-text {
+  color: #1e90ff;
+  font-size: 3.8rem;
+  margin-top: 0.5rem;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.cta-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.get-in-touch-btn {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.get-in-touch-btn:hover {
+  background-color: #010910;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 119, 234, 0.2);
   
-
-  background: linear-gradient(90deg, rgba(3,36,75,1) 29%, rgba(5,11,17,1) 90%);
-}
-.leftSection{
-background-color: red;
-width: 50%;
-}
-.rightSection{
-  background-color: blue;
-  width: 50%;
 }
 
+.arrow {
+  margin-left: 0.5rem;
+}
 
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+}
 
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+}
 
+.facebook {
+  background-color: #1877F2;
+}
 
+.dribbble {
+  background-color: #EA4C89;
+}
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+.linkedin {
+  background-color: #0077B5;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Right side image adjustments */
+.right-content {
+  flex: 1;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container {
+  /* width: 100%; */ /* Unnecessary since it inherits full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 300px;  
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 500%; /* Incorrect value, max should be 50% */
+  /* Recommended fix: border-radius: 50%; */
+  filter: drop-shadow(1px 2px 20px rgb(198, 224, 228));
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .left-content {
+    padding-right: 0;
+    margin-bottom: 3rem;
+  }
+  
+  .headline, .developer-text {
+    font-size: 3.5rem;
+  }
+
+  .profile-image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headline, .developer-text {
+    font-size: 2.8rem;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .headline, .developer-text {
+    font-size: 2.2rem;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cta-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }

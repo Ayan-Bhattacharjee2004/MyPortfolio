@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="contact-container">
         {/* Profile Section */}
         <div className="profile-section">
-          <img src="src/assets/IMG_20230814_185743.jpg" alt="Professional portrait" className="profile-image" />
+          <img src="src/assets/IMG_20230814_185743.jpg" alt="Professional portrait" className="profile-image1" />
           <div className="contact-info">
             <label>Email</label>
             <p className="email">sample@domain.com</p>
@@ -63,7 +63,7 @@ const Contact = () => {
               <textarea name="message" placeholder="Your message *" required rows="5"></textarea>
             </div>
 
-            <button type="submit">SEND MESSAGE</button>
+            <button type="submit" className='problem'>SEND MESSAGE</button>
           </form>
         </div>
       </div>

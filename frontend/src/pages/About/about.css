@@ -1,25 +1,140 @@
-
 .section2 {
-    padding: 100px 20px;  /* Add some padding for each section */
-    /* margin: 50px 0;  Add margin to separate the sections */
-    height: 100vh;  /* Make each section take up the full viewport height */
-    background-color: pink;
-  }
-  
-  .hero {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 3em;
-  }
-  
-  h2 {
-    font-size: 2.5em;
-  }
-  
-  /* Optional: You can add a smooth scroll effect to the whole page */
-  html {
-    scroll-behavior: smooth;
-  }
-  
+  padding: 100px 20px;
+  height: 100vh;
+  /* background-color: #041526; */
+  background: linear-gradient(90deg, rgba(46,72,97,1) 29%, rgba(1,17,36,1) 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white; /* Changed all text to white */
+}
+
+h2 {
+  font-size: 2.5em;
+  color: white; /* Ensuring all headings are white */
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+  color: white; /* Ensuring text inside right section is white */
+}
+
+.left {
+  width: 100%;
+  color: white; /* Ensuring text inside left section is white */
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 600px;
+  color: white; /* Changed paragraph text to white */
+}
+
+.about {
+  font-size: 26.5px;
+  color: white; /* Changed about text to white */
+}
+
+.information {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: white; /* Ensuring this text is white */
+}
+
+.reviewbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Reduced spacing between review boxes */
+  margin-top: 15px;
+  width: 100%;
+  max-width: 500px; /* Decreased max width for a smaller layout */
+}
+
+.rev {
+  background-color: #0a192f;
+  color: white;
+  border-radius: 6px; /* Slightly rounded corners */
+  padding: 8px; /* Reduced padding for a compact look */
+  width: 28%; /* Smaller width */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rev h3 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: bold;
+  color: white; /* Ensuring headings in review boxes are white */
+}
+
+.rev p {
+  font-size: 0.7rem;
+  margin-top: 3px;
+  color: white; /* Ensuring paragraph text in review boxes is white */
+}
+
+/* .button2 {
+  margin-top: 25px;
+  color: white; /* Ensuring button text is white */
+  /* justify-content: space-between;
+  display: flex;
+} */ 
+.button2 {
+  margin-top: 25px;
+  color: white;
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 60px; /* Reduce space between buttons */
+}
+
+
+.aboutme {
+  background-color: #0a192f;
+  width: 24%;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+  border-radius: 5px;
+  color: white; /* Ensuring text inside about me section is white */
+}
+.img{
+  max-width: 63%;
+}
+.profileimg{
+  width: 100%;
+  border-radius: 5%;
+  /* filter: drop-shadow(1px 2px 20px rgb(0, 0, 0)); */
+  filter: drop-shadow(0px 0px 10px rgb(1, 1, 29));
+  border: 2px solid rgba(255, 255, 255, 0.807)
+}
+
+.get-in-touch-btn2, .get-in-touch-btn3 {
+  background-color: #1e90ff;
+  color: white;
+  border: 1px solid transparent; /* Prevent shifting */
+  padding: 0.8rem 1rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.get-in-touch-btn2:hover, .get-in-touch-btn3:hover {
+  background-color: #020b13;
+  border: 1px solid white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Glow effect */
+}
+
